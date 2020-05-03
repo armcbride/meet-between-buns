@@ -1,4 +1,4 @@
-const mysql = require("mysql2");
+const mysql2 = require("mysql2");
 
 const connection = mysql2.createConnection({
     host: process.env.DB_HOST,

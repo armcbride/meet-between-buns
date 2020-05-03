@@ -12,8 +12,6 @@ function printQuestionMarks(num) {
 
   function objToSql(ob) {
     var arr = [];
-  
-    // loop through the keys and push the key/value as a string int arr
     for (var key in ob) {
       var value = ob[key];
     
@@ -96,5 +94,4 @@ function printQuestionMarks(num) {
     }
   };
   
-  // Export the orm object for the model
   module.exports = orm;
