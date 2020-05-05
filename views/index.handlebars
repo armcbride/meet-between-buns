@@ -2,7 +2,9 @@
 
 <h2>Burgers waitin' to be eaten:</h2>
 
-<div class="container"><ul>
+<div class="container">
+
+<ul>
 {{#each burgers}}
 {{#unless eaten}}
 {{> burgers/burger-block eaten=true}}
@@ -12,7 +14,7 @@
 <ul>
 {{#each burgers}}
 {{#if eaten}}
-{{>burgers/burger-block eaten=false}}
+{{> burgers/burger-block eaten=false}}
 {{/if}}
 {{/each}}
 </ul>
