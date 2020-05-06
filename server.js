@@ -1,9 +1,10 @@
+//dependencies
 const express = require("express");
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
 const app = express();
-
+//creates routes
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));

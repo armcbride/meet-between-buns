@@ -1,12 +1,14 @@
 <div class="page-container">
-  
+  {{!-- header --}}
   <div class="title">
     <img src="/assets/images/logo.png" class="logo">
   </div>
+{{!-- header end --}}
 
-
-
+{{!-- body --}}
 <div class="menu-container">
+
+  {{!-- left side: menu --}}
   <div class="menu">
     <img src="/assets/images/burger-icon.png" class= "icon">
     <h2>Burgers waitin':</h2>
@@ -19,7 +21,9 @@
     {{/each}}
     </div>
   </div>
+{{!-- menu end --}}
 
+{{!-- center: eaten --}}
   <div class="eaten">
     <img src="assets/images/wimpy.png" class="wimpy">
     <h2>Burgers eaten:</h2>
@@ -31,15 +35,16 @@
         {{/if}}
       {{/each}}
     </div>
-    
   </div>
+{{!-- eaten end --}}
 
-<div class= "create">
-  <img src="/assets/images/burger-icon.png" class= "icon">
-    <h2>Create a Burger:</h2>
-  <form class="create-form">
+{{!-- right side: create --}}
+  <div class= "create">
+    <img src="/assets/images/burger-icon.png" class= "icon">
+      <h2>Create a Burger:</h2>
+    <form class="create-form">
 
-  <div class="form-group-name">
+    <div class="form-group-name">
     <label for="burger">Burger Name:</label>
     <input type="text" id="burger" name="name" placeholder="something tasty" class ="burger-input">
   </div>
@@ -54,11 +59,14 @@
   </div>
 
     <button type="submit" class="btn">Create Burger</button>
-  </form>
+    </form>
   </div>
+  </div>
+{{!-- create end --}}
+    
+{{!-- body end --}}
 
-  
-    </div>
+{{!-- footer --}}
     <div class=footer>
   <h4>
     Meet Between Buns was made by &copy; <a href= "https://armcbride.github.io" target="_blank">Annaruth McBride</a> 2020;
@@ -67,5 +75,7 @@
   </h4>
   </div>
   </div>
-</div>
+
+  {{!-- page container end --}}
+
 

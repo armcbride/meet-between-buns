@@ -1,5 +1,7 @@
+//dependencies
 const mysql2 = require("mysql2");
 
+//creates connection to mysql
 const connection = mysql2.createConnection({
     host: process.env.DB_HOST,
     port: 3306,

@@ -1,9 +1,11 @@
+// Dependencies:
 var express = require("express");
 
 var router = express.Router();
 
 var burgers = require("../models/burger.js");
 
+//sets up routes
 router.get("/", function(req, res) {
   burgers.all(function(data) {
     var hbsObject = {
