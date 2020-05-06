@@ -8,7 +8,7 @@ const connection = mysql2.createConnection({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB
-} || process.env.JAWSDB_URL);
+});
 
 connection.connect(function(err) {
     if (err){

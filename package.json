@@ -4,6 +4,7 @@
   "description": "burger eating and listing application",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "node index"
   },
   "repository": {
