@@ -2,7 +2,7 @@
   "name": "meet-between-buns",
   "version": "1.0.0",
   "description": "burger eating and listing application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "node index"
