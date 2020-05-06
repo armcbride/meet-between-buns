@@ -1,34 +1,42 @@
+/* color, font, size */
+
 .page-container{
     background-image: url(../images/background.jpg);
     background-repeat: repeat;
 }
 
 .title{
-    background: rgba(187, 187, 187, 0.6);
-    padding: 10px;
-    border-radius: 25px;
-    font-size: 36px;
-    text-align: center;
-    text-shadow: 4px 4px rgba(162, 162, 162);
+    display: flex;
+    justify-content: center;
 }
 
 h2{
     font-family: 'Black Han Sans', sans-serif;
 }
 .logo {
+   
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
     height: 275px;
     width: 300px;
+    
 }
 .icon {
     height: 75px;
     width: 100px;
 }
 
-.items {
-    font-family: 'Black Han Sans', sans-serif;
+.wimpy {
+  height:125px;
+  width:175px
 }
 
-.form-group{
+.items {
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+}
+
+.form-group, .form-group-name {
     font-family: 'Black Han Sans', sans-serif;
 }
 
@@ -39,8 +47,7 @@ h2{
 }
 
 .burger-input{
-    
-        width: 200;
+        width: 185px;
         height: 55px;
         padding: 5px;
         box-sizing: border-box;
@@ -48,6 +55,7 @@ h2{
         border-radius: 4px;
         background-color: #f8f8f8;
         font-size: 16px;
+        font-family: 'Sigmar One', cursive;
         resize: none;
       
 }
@@ -119,9 +127,11 @@ h2{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  /* creates grid alignment */
 .menu-container {
     display: grid;
-    background: rgba(187, 187, 187, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 25px;
     grid-template-columns: auto auto auto auto;
@@ -145,4 +155,18 @@ h2{
 
 .create{
     grid-column: 5 / 8;
+}
+
+/* footer*/
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
 }

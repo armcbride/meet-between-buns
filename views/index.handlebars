@@ -8,43 +8,46 @@
 
 <div class="menu-container">
   <div class="menu">
-    <h2>Burgers waitin' to be eaten:</h2>
     <img src="/assets/images/burger-icon.png" class= "icon">
-    <ul class="items">
+    <h2>Burgers waitin':</h2>
+    
+    <div class="items">
     {{#each burgers}}
       {{#unless eaten}}
         {{> burgers/burger-block eaten=true}}
       {{/unless}}
     {{/each}}
-    </ul>
+    </div>
   </div>
 
   <div class="eaten">
+    <img src="assets/images/wimpy.png" class="wimpy">
     <h2>Burgers eaten:</h2>
 
-    <ul class= "items">
+    <div class= "items">
       {{#each burgers}}
         {{#if eaten}}
           {{> burgers/burger-block eaten=false}}
         {{/if}}
       {{/each}}
-    </ul>
-    <img src="assets/images/wimpy.png" class="wimpy">
+    </div>
+    
   </div>
 
 <div class= "create">
+  <img src="/assets/images/burger-icon.png" class= "icon">
     <h2>Create a Burger:</h2>
   <form class="create-form">
-<img src="/assets/images/burger-icon.png" class= "icon">
+
   <div class="form-group-name">
     <label for="burger">Burger Name:</label>
-    <input type="text" id="burger" name="name" placeholder="burger" class ="burger-input">
+    <input type="text" id="burger" name="name" placeholder="something tasty" class ="burger-input">
   </div>
 
   <div class="form-group">
-    <label for="eaten">Eat now or save?</label><br>
+    <label for="eaten">Eat now or save?</label>
     <label class="input-style">Eat!  
-      <input type="checkbox" name="eaten" value="1" checked="checked"><span class="checkmark"></span> </label><br>
+      <input type="checkbox" name="eaten" value="1" checked="checked"><span class="checkmark"></span> </label>
       <label class="input-style"> Save for later   
     <input class="input-style" type="checkbox" name="eaten" value="0"><span class="checkmark"></span>
     </label>
@@ -53,6 +56,16 @@
     <button type="submit" class="btn">Create Burger</button>
   </form>
   </div>
+
+  
     </div>
+    <div class=footer>
+  <h4>
+    Meet Between Buns was made by &copy; <a href= "https://armcbride.github.io" target="_blank">Annaruth McBride</a> 2020;
+    <a href="https://github.com/armcbride " target="_blank"><img src="/assets/images/github.svg"></a>
+    <a href="https://www.linkedin.com/in/annaruthmcbride" target="_blank"><img src="/assets/images/linkedin.svg"></a>
+  </h4>
+  </div>
   </div>
 </div>
+
