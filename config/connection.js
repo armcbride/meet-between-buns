@@ -1,6 +1,7 @@
 const mysql2 = require("mysql2");
 require('dotenv').config();
-const connection = mysql2.createConnection({
+
+const connection = mysql2.createConnection(process.env.JAWSDB_URL || {
     host: process.env.DB_HOST,
     port: 3306,
     user: process.env.DB_USER,
